@@ -7,7 +7,6 @@ import {
   Terminal,
   ExternalLink,
   Code2,
-  Cpu,
   Database,
   ScanEye,
   Sun,
@@ -159,14 +158,14 @@ function App() {
 
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/eccarneiro"
                 target="_blank"
                 className="p-3 border border-dim/30 rounded bg-surface hover:border-neon hover:text-neon transition-all text-text"
               >
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/emanuelcorreacarneiro/"
                 target="_blank"
                 className="p-3 border border-dim/30 rounded bg-surface hover:border-neon hover:text-neon transition-all text-text"
               >
