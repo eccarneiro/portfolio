@@ -8,7 +8,7 @@
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 
 ## 🌐 Live Demo
-👉 **[Acesse o portfólio online aqui](https://seu-link-da-vercel.app)**
+👉 **[Acesse o portfólio online aqui](https://emanuel-correa-portifolio.vercel.app/)**
 
 ---
 
