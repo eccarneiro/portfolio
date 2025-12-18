@@ -5,26 +5,30 @@
 @tailwind utilities;
 
 :root {
-  --background: 245 247 250; 
+  --background: 245 247 250;
   --surface: 255 255 255;
-  --neon: 5 150 105; 
-  --dim: 107 114 128; 
-  --text: 24 24 27;
-
-.dark {
-  --background: 10 10 10; 
-  --surface: 18 18 18; 
-  --neon: 0 255 65; 
-  --dim: 136 136 136;
-  --text: 229 229 229;
+  --neon: 5 150 105;
+  --dim: 107 114 128;
+  --text: 24 24 27; /* Preto quase puro */
 }
 
+.dark {
+  /* MODO ESCURO (Hacker) */
+  --background: 10 10 10; /* #0a0a0a */
+  --surface: 18 18 18; /* #121212 */
+  --neon: 0 255 65; /* Verde Terminal */
+  --dim: 136 136 136; /* #888888 */
+  --text: 229 229 229; /* Branco gelo */
+}
+
+/* Configuração Global */
 body {
   background-color: rgb(var(--background));
   color: rgb(var(--text));
   font-family: "JetBrains Mono", monospace;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
 
+  /* Grid de fundo adaptável */
   background-image: linear-gradient(
       to right,
       rgba(var(--dim), 0.1) 1px,
