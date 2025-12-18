@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 245 247 250; 
+  --surface: 255 255 255;
+  --neon: 5 150 105; 
+  --dim: 107 114 128; 
+  --text: 24 24 27;
+
+.dark {
+  --background: 10 10 10; 
+  --surface: 18 18 18; 
+  --neon: 0 255 65; 
+  --dim: 136 136 136;
+  --text: 229 229 229;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--text));
+  font-family: "JetBrains Mono", monospace;
+  transition: background-color 0.3s, color 0.3s;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(var(--dim), 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(var(--dim), 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--neon));
+}
