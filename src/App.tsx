@@ -96,7 +96,7 @@ function App() {
 
   return (
     <div className="min-h-screen px-6 py-12 md:px-20 max-w-7xl mx-auto selection:bg-neon selection:text-white">
-      <header className="flex justify-between items-center mb-24">
+      <header className="flex justify-between items-center mb-10">
         <div className="flex items-center gap-2 text-neon cursor-pointer group">
           <Terminal
             size={20}
@@ -130,7 +130,7 @@ function App() {
         </div>
       </header>
 
-      <main className="space-y-32">
+      <main className="space-y-12 md:space-y-32">
         <section id="about" className="relative pt-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -156,26 +156,29 @@ function App() {
               (Python/YOLO).
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex items-center gap-6 justify-center md:justify-start w-full">
               <a
                 href="https://github.com/eccarneiro"
                 target="_blank"
-                className="p-3 border border-dim/30 rounded bg-surface hover:border-neon hover:text-neon transition-all text-text"
+                className="p-4 border border-dim/30 rounded-xl bg-surface hover:border-neon hover:text-neon transition-all text-text flex items-center justify-center"
               >
-                <Github size={20} />
+                <Github size={24} />
               </a>
+
               <a
                 href="https://www.linkedin.com/in/emanuelcorreacarneiro/"
                 target="_blank"
-                className="p-3 border border-dim/30 rounded bg-surface hover:border-neon hover:text-neon transition-all text-text"
+                className="p-4 border border-dim/30 rounded-xl bg-surface hover:border-neon hover:text-neon transition-all text-text flex items-center justify-center"
               >
-                <Linkedin size={20} />
+                <Linkedin size={24} />
               </a>
+
               <a
                 href="mailto:emanuelcorreacarneiro@gmail.com"
-                className="px-6 py-3 bg-neon text-white font-bold rounded hover:bg-neon/80 transition-colors flex items-center gap-2 shadow-lg shadow-neon/20"
+                className="px-8 py-4 bg-neon text-white font-bold rounded-xl hover:bg-neon/80 transition-colors flex items-center gap-3 shadow-lg shadow-neon/20 text-lg"
               >
-                <Mail size={18} /> Entrar em contato
+                <Mail size={24} />
+                <span>Contato</span>
               </a>
             </div>
           </motion.div>
